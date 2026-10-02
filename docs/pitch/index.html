@@ -33,6 +33,46 @@ section{position:relative;overflow:hidden}.wrap{width:min(calc(100vw - 40px),var
 .final-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}.final-price{margin-top:26px;font-size:clamp(2.25rem,5vw,4rem);line-height:1;font-weight:950;letter-spacing:-.045em;color:#10a667}.checks{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px 18px}.check{display:flex;gap:10px;align-items:flex-start;color:#31485f;font-size:15px;font-weight:800}.check:before{content:"✓";flex:0 0 24px;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:var(--green);color:#fff;font-weight:950}.section-mark{position:absolute;right:24px;bottom:22px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9aabbc;font-weight:850}.dark .section-mark{color:#5f7388}
 @media(max-width:980px){.hero-logo{width:min(700px,78vw)}.hero-logo-wrap{margin-bottom:24px;padding:20px 24px}.section{min-height:auto;padding:104px 0 78px}.hero{min-height:auto;padding:126px 0 84px}.hero-grid,.final-grid{grid-template-columns:1fr}.visual{min-height:320px;justify-content:flex-start}.orbit{width:min(62vw,360px)}.grid3{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr}.roadmap{grid-template-columns:1fr 1fr}.flowline{grid-template-columns:1fr;gap:12px}.flow-node{min-height:74px}.flow-node:not(:last-child):after{content:"↓";right:auto;left:50%;bottom:-20px;transform:translateX(-50%)}.solution-note{grid-template-columns:1fr}.final-orb{justify-self:start;width:min(58vw,330px)}}
 @media(max-width:640px){.brand-logo{width:28px;height:28px}.hero-logo{width:100%}.hero-logo-wrap{width:100%;margin-bottom:20px;padding:16px 18px;border-radius:20px}.sitebar{top:8px;width:calc(100vw - 16px);height:48px;padding:0 13px}.sitebar .meta{display:none}.wrap{width:min(calc(100vw - 28px),var(--max))}.section{padding:88px 0 62px}.hero{padding:96px 0 66px}h1{font-size:clamp(2.55rem,13vw,3.8rem)}h2{font-size:clamp(2rem,10vw,3rem)}.hero-title .sub{font-size:1.28rem}.flow{font-size:15px;line-height:1.5}.badge{font-size:12px;line-height:1.35;border-radius:18px}.visual{min-height:255px}.orbit{width:min(72vw,250px)}.orbit-core{font-size:1.12rem}.grid3,.features,.roadmap,.checks{grid-template-columns:1fr}.card,.feature,.price,.road{padding:20px;border-radius:18px}.goal,.fallback{grid-template-columns:1fr;gap:8px;padding:18px;border-radius:18px}.goal p{font-size:16px}.solution-note p,.feature p,.price p,.road p,.fallback p{font-size:15px}.pricing,.roadmap{margin-top:30px}.focus{font-size:15px;line-height:1.4}.final-price{font-size:2.5rem}.final-orb{width:min(72vw,250px)}.section-mark{display:none}}
+
+/* HQ logo placement */
+.brand-logo-shell{
+  display:flex;align-items:center;justify-content:center;
+  width:112px;height:38px;padding:3px 8px;
+  border-radius:11px;background:#fff;
+  box-shadow:0 5px 18px rgba(0,0,0,.15);overflow:hidden
+}
+.brand-logo{width:100%;height:100%;object-fit:contain;background:transparent;border-radius:0;padding:0}
+.hero-logo-wrap{
+  width:min(780px,82vw);margin-bottom:30px;padding:24px 28px;
+  border-radius:28px;background:linear-gradient(145deg,#fff,#f5fbff);
+  border:1px solid rgba(255,255,255,.92);
+  box-shadow:0 28px 80px rgba(0,0,0,.22)
+}
+.hero-logo-crop{position:relative;width:100%;aspect-ratio:947/538;overflow:hidden}
+.hero-logo{
+  position:absolute;width:114.05%;height:auto;max-width:none;max-height:none;
+  left:-6.87%;top:-51.67%;object-fit:initial;filter:none
+}
+.final-logo-panel{
+  justify-self:end;width:min(520px,86vw);padding:24px 26px;
+  border-radius:26px;background:linear-gradient(145deg,#fff,#f5fbff);
+  border:1px solid var(--line);box-shadow:0 22px 55px rgba(8,26,48,.09)
+}
+.final-logo-crop{position:relative;width:100%;aspect-ratio:947/538;overflow:hidden}
+.final-logo{
+  position:absolute;width:114.05%;height:auto;max-width:none;max-height:none;
+  left:-6.87%;top:-51.67%;object-fit:initial
+}
+@media(max-width:980px){
+  .hero-logo-wrap{width:min(760px,88vw);padding:20px 24px}
+  .final-logo-panel{justify-self:start;width:min(560px,86vw)}
+}
+@media(max-width:640px){
+  .brand-logo-shell{width:94px;height:34px;padding:3px 7px}
+  .hero-logo-wrap{width:100%;padding:15px 16px;border-radius:20px}
+  .final-logo-panel{width:100%;padding:16px;border-radius:20px}
+}
+
 </style>
 </head>
 <body>
