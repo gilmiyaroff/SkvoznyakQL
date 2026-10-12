@@ -1,0 +1,16 @@
+# Private source exports and generated private artifacts
+*.xlsx
+meta_ads_daily_*.csv
+usd_kzt_daily_*.json
+private/
+build_private/
+skvoznyak_private/
+*_private*.html
+
+# Local tooling
+node_modules/
+.DS_Store
+__pycache__/
+*.pyc
+playwright-report/
+test-results/

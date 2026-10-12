@@ -1,0 +1,962 @@
+{
+  "status": "PASS",
+  "checks_total": 227,
+  "checks_passed": 227,
+  "summary": {
+    "meta_rows": 23060,
+    "unique_ads": 515,
+    "crm_deals": 5654,
+    "exact_ad_id_matches": 3596,
+    "confirmed_ctwa_matches": 3512,
+    "unmatched_deals": 2058,
+    "meta_spend_usd": 44552.89,
+    "fx_days": 195
+  },
+  "monthly_files": [
+    {
+      "file": "meta_ads_daily_2026-04.csv",
+      "rows": 2940,
+      "spend_usd": 5534.36
+    },
+    {
+      "file": "meta_ads_daily_2026-05.csv",
+      "rows": 5208,
+      "spend_usd": 7983.28
+    },
+    {
+      "file": "meta_ads_daily_2026-06.csv",
+      "rows": 3120,
+      "spend_usd": 5901.38
+    },
+    {
+      "file": "meta_ads_daily_2026-07.csv",
+      "rows": 2821,
+      "spend_usd": 5157.22
+    },
+    {
+      "file": "meta_ads_daily_2026-08.csv",
+      "rows": 3131,
+      "spend_usd": 6178.41
+    },
+    {
+      "file": "meta_ads_daily_2026-09.csv",
+      "rows": 4820,
+      "spend_usd": 9547.26
+    },
+    {
+      "file": "meta_ads_daily_2026-10_partial.csv",
+      "rows": 1020,
+      "spend_usd": 4250.98
+    }
+  ],
+  "checks": [
+    {
+      "check": "build modes are explicit",
+      "ok": true
+    },
+    {
+      "check": "public: 23,060 Meta rows",
+      "ok": true
+    },
+    {
+      "check": "public: 515 unique ads",
+      "ok": true
+    },
+    {
+      "check": "public: 5,654 unique CRM deals",
+      "ok": true
+    },
+    {
+      "check": "public: 3,596 exact Ad ID matches",
+      "ok": true
+    },
+    {
+      "check": "public: 3,512 exact CTWA matches",
+      "ok": true
+    },
+    {
+      "check": "public: 84 exact Ad-ID-only matches",
+      "ok": true
+    },
+    {
+      "check": "public: 2,058 deals without exact attribution",
+      "ok": true
+    },
+    {
+      "check": "public: no duplicate Deal IDs",
+      "ok": true
+    },
+    {
+      "check": "public: 195 daily FX rates",
+      "ok": true
+    },
+    {
+      "check": "public: every Meta Ad ID is an 18-digit string",
+      "ok": true
+    },
+    {
+      "check": "public: file and row spend reconcile",
+      "ok": true
+    },
+    {
+      "check": "public: day-level spend reconciles",
+      "ok": true
+    },
+    {
+      "check": "public: ad-level spend reconciles",
+      "ok": true
+    },
+    {
+      "check": "private: 23,060 Meta rows",
+      "ok": true
+    },
+    {
+      "check": "private: 515 unique ads",
+      "ok": true
+    },
+    {
+      "check": "private: 5,654 unique CRM deals",
+      "ok": true
+    },
+    {
+      "check": "private: 3,596 exact Ad ID matches",
+      "ok": true
+    },
+    {
+      "check": "private: 3,512 exact CTWA matches",
+      "ok": true
+    },
+    {
+      "check": "private: 84 exact Ad-ID-only matches",
+      "ok": true
+    },
+    {
+      "check": "private: 2,058 deals without exact attribution",
+      "ok": true
+    },
+    {
+      "check": "private: no duplicate Deal IDs",
+      "ok": true
+    },
+    {
+      "check": "private: 195 daily FX rates",
+      "ok": true
+    },
+    {
+      "check": "private: every Meta Ad ID is an 18-digit string",
+      "ok": true
+    },
+    {
+      "check": "private: file and row spend reconcile",
+      "ok": true
+    },
+    {
+      "check": "private: day-level spend reconciles",
+      "ok": true
+    },
+    {
+      "check": "private: ad-level spend reconciles",
+      "ok": true
+    },
+    {
+      "check": "public payload contains no deal rows",
+      "ok": true
+    },
+    {
+      "check": "private drill-down contains only exact-attributed deals",
+      "ok": true
+    },
+    {
+      "check": "public payload contains no Deal ID field",
+      "ok": true
+    },
+    {
+      "check": "public payload contains no manager field",
+      "ok": true
+    },
+    {
+      "check": "public payload contains no email address",
+      "ok": true
+    },
+    {
+      "check": "public payload contains no Kazakhstan/Russia-style phone",
+      "ok": true
+    },
+    {
+      "check": "public daily sales contain no individual revenue",
+      "ok": true
+    },
+    {
+      "check": "public monthly revenue obeys k-threshold and rounding",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248828108500019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248503224270019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248503224290019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248828108490019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248502672720019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248542782720019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248501376350019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248501951840019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248542782700019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248500885750019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248102109120019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248503224260019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248500827050019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248500590620019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248102109110019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248501010960019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248116104070019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248116002690019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248102924540019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248102924510019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248501706090019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248101878100019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248101190500019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248102637280019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248501010970019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248101878120019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248102547860019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248101190520019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248101534260019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248102317860019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248101190480019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120248101878090019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251406715300019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251284209800019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251284209780019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251284209820019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251284209790019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251284498910019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120250822025730019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120250530270040019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120250041885870019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120250529932640019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120249683122070019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120250041691330019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120249681605510019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252243492870019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252243492890019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252214803420019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252243492880019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252214780520019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252214803410019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252214780510019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252243108160019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252162503450019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252214780500019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252162503420019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252161630110019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252007869570019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251685070090019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251575404540019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251685070070019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252007869540019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251575129800019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251987522750019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251575129790019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252007869560019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251575414900019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251987522720019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251977330790019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251575129760019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120251575410560019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253034177350019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253034177360019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253034177340019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252973503660019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252578103980019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252990645940019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252990703950019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252990708630019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252868359650019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252858842990019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252979071070019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252990687780019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252828241630019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252973529320019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252979071080019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252828184580019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252858843020019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252868359680019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252828184570019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252805926700019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252858843000019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252805752700019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252805926690019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252805752720019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252828137260019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252580923000019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252805926680019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252805752690019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252580922970019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252828137240019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252578067830019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252578067820019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252578103970019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252578103960019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120252578067840019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253427536890019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253510041590019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253526542150019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253245966060019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253427536880019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253510011640019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206819850019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206807580019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253493352300019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253526253020019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206784610019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253427207280019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253493343780019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253526190100019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206767720019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260495920019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253493333430019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253526063370019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206633620019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253493218390019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253514351150019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206596910019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260475080019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253493204190019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253514318880019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253493191580019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253514235570019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260447130019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253493178590019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253510294430019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206574120019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260390010019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253493167400019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253510219280019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206464800019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260371390019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206377470019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260356050019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253493143140019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206165010019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260348170019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253206131680019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260329580019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253178306430019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260279730019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260254770019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253173932710019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253173932680019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253260169270019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253173932670019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253246164550019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253246130560019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253246110180019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253246090940019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253246069640019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253648981540019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253703720020019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253580926170019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253646975390019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605856050019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605841400019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253580926130019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605819490019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605779250019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253662819530019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253662794300019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605727170019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253662762450019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605642650019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253662666070019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253551002030019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605620160019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253550937040019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605589690019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253550937020019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605496840019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253550882090019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605101950019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253605082490019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253604994730019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253604970370019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253604944020019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253602647860019",
+      "ok": true
+    },
+    {
+      "check": "safe creative URL: 120253602106740019",
+      "ok": true
+    },
+    {
+      "check": "public/private Meta spend is identical",
+      "ok": true
+    },
+    {
+      "check": "public/private lead aggregates are identical",
+      "ok": true
+    }
+  ]
+}
