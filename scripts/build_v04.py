@@ -145,9 +145,10 @@ def render(template,payload,out):
  raw=json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('</script>','<\\/script>')
  out.parent.mkdir(parents=True,exist_ok=True);out.write_text(template.read_text(encoding='utf-8').replace('__DATA__',raw),encoding='utf-8')
 def main():
- p=argparse.ArgumentParser();p.add_argument('--input-root',type=Path,required=True);p.add_argument('--fx-json',type=Path,required=True);p.add_argument('--template',type=Path,default=Path(__file__).parents[1]/'src'/'v04.template.html');p.add_argument('--public-out',type=Path,required=True);p.add_argument('--private-out',type=Path);p.add_argument('--public-k',type=int,default=5);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--input-root',type=Path,required=True);p.add_argument('--fx-json',type=Path,required=True);p.add_argument('--template',type=Path,default=Path(__file__).parents[1]/'src'/'v04.template.html');p.add_argument('--public-out',type=Path,required=True);p.add_argument('--public-mirror',type=Path);p.add_argument('--private-out',type=Path);p.add_argument('--public-k',type=int,default=5);a=p.parse_args()
  fxj=json.loads(a.fx_json.read_text());fx={x['date']:x['usd_kzt'] for x in fxj['rows']};meta,ads,files=load_meta(a.input_root,fx);deals,audit=load_crm(find(a.input_root,'amocrm_deals_export_2026-10-12.xlsx'),ads,a.public_k)
- render(a.template,make_payload(meta,ads,deals,fx,files,audit,False,a.public_k),a.public_out)
+ public_payload=make_payload(meta,ads,deals,fx,files,audit,False,a.public_k);render(a.template,public_payload,a.public_out)
+ if a.public_mirror:render(a.template,public_payload,a.public_mirror)
  if a.private_out:render(a.template,make_payload(meta,ads,deals,fx,files,audit,True,a.public_k),a.private_out)
  print(json.dumps({'meta':len(meta),'ads':len(ads),'deals':len(deals),'exact':audit['exact'],'ctwa':audit['ctwa'],'creative_ok':audit['creative_ok'],'creative_missing':audit['creative_missing'],'creative_ambiguous':audit['creative_ambiguous'],'public':str(a.public_out),'private':str(a.private_out or '')},ensure_ascii=False,indent=2))
 if __name__=='__main__':main()
